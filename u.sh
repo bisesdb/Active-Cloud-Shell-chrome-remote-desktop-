@@ -1,6 +1,7 @@
 #!/bin/sh
 sudo apt update
 wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
+chmod +x chrome-remote-desktop_current_amd64.deb
 sudo apt install --assume-yes ./chrome-remote-desktop_current_amd64.deb
 rm -f chrome-remote-desktop_current_amd64.deb
 sudo DEBIAN_FRONTEND=noninteractive apt install --assume-yes xfce4 desktop-base dbus-x11 xscreensaver
