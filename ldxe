@@ -1,0 +1,7 @@
+#!/bin/sh
+sudo apt update
+sudo apt install -y lxde
+wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
+sudo apt install -y ./chrome-remote-desktop_current_amd64.deb
+sudo usermod -a -G chrome-remote-desktop bishesd
+echo "exec /usr/bin/startlxde" > ~/.chrome-remote-desktop-session
